@@ -1,0 +1,232 @@
+@font-face {
+    font-family: 'League Spartan';
+    src: url(font/League_Spartan.zip);
+    
+}
+@font-face {
+    font-family: 'CooperBT';
+    src: url(font/Cooper_BT_Font_Family.zip);
+}
+@font-face {
+    font-family: 'Marykate';
+    src: url(font/FontsFree-Net-Marykate-Regular.ttf);
+}
+@font-face {
+    font-family: 'TheSeason';
+    src: url(font/The\ Seasons\ Font.zip);
+}
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+.banner{
+    width: 100%;
+    height: 200vh;
+    background-image: linear-gradient(rgba(168, 167, 167, 0.50),rgba(0, 0, 0, 0.50)),url(background.png);
+    
+    /*rgba(168, 167, 167, 0.5)*/
+    background-size: cover;
+    background-position: center;
+}
+.navbar{
+    width: 100%;
+
+    margin: auto;
+    padding: 55px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo{
+    width: 100px;
+    cursor: pointer;
+   
+}
+.image{
+    width: 20%;
+    position: absolute;
+    top: 1%;
+    left: -15px;
+    
+}
+.navbar ul li{
+
+    list-style: none;
+    display: inline-block;
+    margin: 0 7px;
+    position: relative;
+    left: 10%;
+    
+}
+.navbar ul li a{
+    text-decoration: none;
+    color: #ffffff;
+    font-family: 'TheSeason';
+    font-size: 27px;
+    font-weight: bold;
+    text-shadow: 
+    0 0 10px#00aeff ;
+}
+.navbar ul li::after{
+    content:'';
+    height: 3px;
+    width: 0;
+    background: #0088ff;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 0.5s;
+    
+}
+.navbar ul li:hover::after{
+    width: 100%;
+}
+.content{
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    color: #ffffff;
+    
+}
+.content h2{
+    font-size: 50px;
+    margin-top: 20px;
+    text-transform: uppercase;
+    font-family: 'LeagueSpartan';
+    text-shadow: 
+    0 0 5px#00aeff ;
+     
+}
+    
+.content p{
+    margin: 20px auto;
+    font-size: 25px;
+    line-height: 25px;
+    text-shadow: 
+    0 0 5px #00aeff ;
+    font-family: 'CooperBT';
+}
+.contentp2{
+    width: 100%;
+    position: absolute;
+    top: 130%;
+    transform: translateY(-50%);
+    text-align: center;
+    color: #ffffff;
+    
+}
+.contentp2 h2{
+    font-size: 40px;
+    margin-top: 20px;
+    text-transform: uppercase;
+    font-family: 'LeagueSpartan';
+    text-shadow: 
+    0 0 5px#00aeff ;
+     
+}
+    
+.contentp2 p{
+    margin: 20px auto;
+    font-size: 25px;
+    line-height: 25px;
+    text-shadow: 
+    0 0 5px #00aeff ;
+    font-family: 'CooperBT';
+    position: absolute;
+    left: 25%;
+    top: 100%;
+
+}
+
+.contentp2 img{
+    width: 300px
+
+    
+}
+.img1{
+    position: absolute;
+    left: 50%;
+    top: 140%;
+}
+
+.renstra{
+    width: 100%;
+    position: absolute;
+    top: 195%;
+    transform: translateY(-100%);
+    text-align: center;
+    letter-spacing: 5px;
+    font-size: x-large;
+    font-family: 'CooperBT';
+    color: #ffffff;
+    text-shadow: 
+    
+    0 0 5px #00aeff ;
+    
+}
+.button1
+{
+    position:absolute;
+    top : 180%;
+    left: 0%;
+}
+.button2
+{
+    position: absolute;
+    top : 180%;
+    right: 0%;
+}
+button{
+top: 10px;
+width: 65px;
+padding: 15px 0;
+text-align: center;
+font-size: xx-large;
+text-shadow: 
+0 0 5px #00aeff ;
+font-family: 'Marykate';
+margin: 20px 10px;
+border-radius: 25px;
+
+border: 2px solid #90cbff;
+background:rgba(165, 226, 255, 0.50);
+color: white;
+cursor: pointer;
+position: relative;
+overflow: hidden;
+/*#dae8f4*/
+}
+span{
+    background: #6cb5f1;
+    
+    height: 0%;
+    width: 0%;
+    border-radius: 25px;
+    position: absolute;
+    left: 50%;
+    bottom: 50%;
+    z-index: -1;
+    transition: 1s;
+}
+button:hover span{
+    width: 100%;
+    left: 0%;
+    height: 100%;
+    bottom: 0%;
+    
+
+    
+
+}   
+button:hover{
+    border: 2px solid #90cbff;
+    text-shadow: 
+    0 0 5px #00aeff ;
+    text-shadow: 
+    0 0 10px #00aeff ;
+   
+}
+
